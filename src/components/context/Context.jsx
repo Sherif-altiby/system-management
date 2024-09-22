@@ -1,13 +1,10 @@
-// ProductContext.js
 import React, { createContext, useState } from "react";
 
-// Create the context
 const ProductContext = createContext();
 
-// Create a provider component
 const ProductProvider = ({ children }) => {
   const [products, setProducts] = useState([
-    { name: "", amount: "", price: "", serial: "" }, // Initial product
+    { name: "", amount: "", price: "", serial: "" }, 
   ]);
 
   const addProduct = () => {

@@ -76,3 +76,68 @@ input[type=number]::-webkit-outer-spin-button {
 .content_rtl {
   direction: rtl;
 }
+
+
+.invoice{
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.invoice h1{
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1976d3;
+}
+
+p{
+  margin: 0 !important;
+}
+
+.invoice__header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+  color: #fff;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.invoice__header .item{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.invoice__header .item p{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.invoice__header .item  span{
+  color: #331a1a;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.total__price{
+  color: #1976d3;
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  margin-top: 20px;
+  background-color: #f5f5f5;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 5px;
+  gap: 10px;
+}
+
+.total__price span{
+  display: block;
+  color: #331a1a;
+}
