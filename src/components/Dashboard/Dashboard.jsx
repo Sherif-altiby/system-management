@@ -69,7 +69,7 @@ const dataBar = [
 const Dashboard = () => {
   return (
     <div className='dashboard' >
-      <div className="main-container">
+      <div className="">
         <div className="row mb-4">
           <div className="col-12 col-md-6">
              <div className="static_card">

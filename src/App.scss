@@ -19,9 +19,20 @@
   src: url("./fonts/Cairo-Bold.ttf");
 }
 
-.main-container {
-  width: 95%;
-  margin: auto;
+.main-container{
+  transition: 0.5s;
+}
+
+.main-container.l-240 {
+  width: 100%;
+  padding-left: 260px;
+  padding-right: 20px;
+}
+
+.main-container.l-65 {
+  width: 100%;
+  padding-left: 85px;
+  padding-right: 20px;
 }
 
 body{
@@ -140,4 +151,22 @@ p{
 .total__price span{
   display: block;
   color: #331a1a;
+}
+
+
+.filtered-products{
+  position: absolute;
+  top: 65px;
+  right: 20px;
+  width: fit-content
+}
+
+.css-46bh2p-MuiCardContent-root:last-child{
+  padding-bottom: 10px !important;
+  background-color: #1976d3;
+
+}
+
+.acc-container .MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-20bmp1-MuiSvgIcon-root{
+  color: #fff;
 }
