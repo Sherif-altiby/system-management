@@ -45,6 +45,7 @@ const AddItem = () => {
                           textAlign: "right",
                           fontSize: "18px",
                           color: "#198754",
+                          direction: "ltr"
                         },
                       }}
                       InputLabelProps={{
@@ -130,7 +131,7 @@ const AddItem = () => {
                 >
                   <TextField
                     id="number-field"
-                    label="سعر المنتج"
+                    label="سعر شراء المنتج"
                     variant="filled"
                     type="number"
                     inputProps={{
@@ -186,46 +187,7 @@ const AddItem = () => {
                   />
                 </Box>
               </div>
-              <div className="col-12 col-md-6">
-                <Box
-                  sx={{ "& > :not(style)": { m: 1, width: "100%" } }}
-                  noValidate
-                  autoComplete="off"
-                >
-                  <input
-                    id="image-field"
-                    type="file"
-                    accept="image/*"
-                    style={{
-                      display: "none",
-                    }}
-                    onChange={(event) => {
-                      const file = event.target.files[0];
-                      if (file) {
-                        console.log(file);
-                      }
-                    }}
-                  />
-                  <label htmlFor="image-field">
-                    <TextField
-                      variant="filled"
-                      label="إرفع صورة"
-                      sx={{
-                        width: "100%",
-                        cursor: "pointer",
-                        textAlign: "right",
-                      }}
-                      InputProps={{
-                        readOnly: true,
-                        onClick: (e) => {
-                          e.preventDefault();
-                          document.getElementById("image-field").click();
-                        },
-                      }}
-                    />
-                  </label>
-                </Box>
-              </div>
+            
             </div>
 
             <div className="main_frm__btn"> <Button type="submit" variant="contained" sx={{ fontSize: "20px" }} > أضف المنتج </Button> </div>

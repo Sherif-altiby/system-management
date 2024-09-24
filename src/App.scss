@@ -57,6 +57,13 @@ body{
   padding-top: 20px;
 }
 
+
+.static_card_custom{
+  background-color: #fff;
+  height: 300px;
+  border-radius: 10px;
+}
+
 .main-card{
   background-color: #fff;
   padding: 20px;
@@ -169,4 +176,25 @@ p{
 
 .acc-container .MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-20bmp1-MuiSvgIcon-root{
   color: #fff;
+}
+
+.category-link{
+  display: flex;
+  height: 70px;
+  padding: 20px;
+  align-items: center;
+  text-decoration: none;
+  color: #1976d3 !important;
+  transition: 0.4s !important;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.category-link:hover{
+  background-color: #1976d3 ;
+  color: #fff !important;
+}
+
+.category-amount, .category-name{
+  font-size: 23px;
 }

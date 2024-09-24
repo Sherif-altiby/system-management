@@ -7,6 +7,7 @@ import SellItem from './components/SellItem/SellItem';
 import AddItem from './components/AddItem/AddItem';
 import MakeInvoice from './components/Invoices/MakeInvoice';
 import Home from './components/Home/Home';
+import Salles from './components/Salles/Salles';
 
 
 const App = () => {
@@ -18,8 +19,9 @@ const App = () => {
                          <Route index element={<Dashboard />} />
                          <Route path='add-item' element={<AddItem />} />
                          <Route path='sell-item' element={<SellItem />} />
-                         <Route path='products' element={<AllItems />} />
+                         <Route path='categories' element={<AllItems />} />
                          <Route path='invoice' element={<MakeInvoice />} />
+                         <Route path='salles' element={<Salles />} />
                     </Route>
                </Routes>
          </Router>
